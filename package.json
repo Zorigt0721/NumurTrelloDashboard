@@ -9,13 +9,15 @@
     "url": "git clone https://github.com/tailwindtoolbox/Admin-Template-Day.git"
   },
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "build:css": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "watch": "watch 'npm run build:css' ./layouts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.6.2"
+    "tailwindcss": "^1.6.2",
+    "watch": "^1.0.2"
   }
 }
